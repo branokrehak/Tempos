@@ -1,0 +1,16 @@
+@import '../abstracts/variables';
+.perex{
+  background-color: $accent-color;
+  padding: 3rem 7rem;
+  color: $primary-color;
+  font-size: font(2);
+  margin-bottom: 3rem;
+  @media (max-width: 576px) {
+    padding: 1.5rem 1rem;
+    font-size: font(sm);
+  }
+  @media (max-width: 1200px) and (min-width: 575px) {
+    padding: 1.5rem 3rem;
+    font-size: font(sm);
+  }
+}

@@ -1,0 +1,118 @@
+footer .disclaimer {
+  background-color: #252525;
+  color: white;
+  width: 100%;
+  font-size: 0.875rem;
+}
+footer .disclaimer .container {
+  padding: 1.5rem 0;
+}
+footer .disclaimer .container .right-text {
+  text-align: right;
+}
+@media (max-width: 991px) {
+  footer .disclaimer .container .right-text {
+    text-align: left;
+  }
+  footer .disclaimer .container .right-text .media-hidden {
+    display: none;
+  }
+}
+footer .disclaimer .container a {
+  color: white;
+}
+footer .disclaimer .container a:hover {
+  text-decoration: none;
+  transition: all 0.25s ease-out !important;
+  color: #ffee00;
+}
+footer .contact::before {
+  content: "";
+  height: 100%;
+  right: 0;
+  position: absolute;
+  background-image: url("/images/mapa.png");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+@media (max-width: 1199px) {
+  footer .contact::before {
+    display: none;
+  }
+}
+footer .contact {
+  position: relative;
+  background-color: #4f619b;
+}
+footer .contact .container {
+  padding: 2.5rem 5rem 2.5rem 0;
+}
+footer .contact .container .title {
+  font-weight: 700;
+  color: white;
+  font-size: 2.25rem;
+  margin-bottom: 1em;
+}
+footer .contact .container .form .form-input {
+  margin-right: 5rem;
+  position: relative;
+  margin-bottom: 1.25em;
+  background: #fff;
+  text-align: left;
+  font-size: 1em;
+}
+footer .contact .container .form .form-input .inputs {
+  padding: 0.75rem 1rem;
+  border: none;
+  width: 100%;
+  text-decoration: none;
+}
+footer .contact .container .form .info {
+  color: white;
+  font-size: 0.875rem;
+}
+footer .contact .container .form .info a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 700;
+}
+footer .contact .container .form .info:hover a {
+  color: #ffee00;
+  transition: all 0.25s ease-out !important;
+}
+footer .contact .container .form .btn {
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  border: 0.25rem solid #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+}
+footer .contact .container .form .btn:hover {
+  transition: all 0.25s ease-out !important;
+  color: #385c91;
+  background-color: #ffffff;
+}
+footer .contact .container .form button {
+  margin-top: 1em;
+}
+footer .contact .container .map {
+  display: none;
+  height: 40rem;
+  background-image: url("/images/mapa.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+@media (max-width: 1199px) {
+  footer .contact .container {
+    padding-right: 0;
+  }
+  footer .contact .container .form .form-input {
+    margin-right: 0;
+  }
+  footer .contact .container .map {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=footer.css.map */

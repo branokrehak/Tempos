@@ -1,0 +1,60 @@
+@import '../abstracts/mixins';
+.gallery{
+  .list{
+    ul{
+      margin: 0;
+      padding: 0;
+      padding-bottom: .25rem;
+      display: flex;
+      flex-direction: row;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      text-decoration: none;
+      list-style: none;
+      width: calc(100% + (100vw - 100%) / 2);
+      li{
+        flex: 0 0 auto;
+        a{
+          .background{
+            position: relative;
+            width: 12rem;
+            height: 12rem;
+            display: flex;
+            flex-direction: row;
+            display: inline-block;
+            margin-right: 2rem;
+            background-position: center;
+            background-size: cover;
+            .overlay{
+              height: 100%;
+              display: flex;
+              .mag-glass{
+                opacity: 0;
+                position: absolute;
+                width: 4em;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+              }
+              &:hover{
+                background-color: rgba($color: #000000, $alpha: 0.4);
+                @include transition-eio-025;
+                .mag-glass{
+                  @include transition-eio-025;
+                  opacity: 100%;
+                }
+              }
+            }
+          }
+          .img-1{
+            background-image: url('https://tempos.krehak.com/uploads/galleries/5/gallery/thumb/df8b41f3b831054aa6e69c17fb23db10.JPG');
+          }
+          .img-2{
+            background-image: url('https://tempos.krehak.com/uploads/galleries/5/gallery/full/b762d94e4ac7d09a5dd8674c8a1c993c.jpg');
+          }
+        }
+      }
+    }
+  }
+}

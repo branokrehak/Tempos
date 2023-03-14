@@ -1,0 +1,27 @@
+@import '../../style/style.css';
+body #root {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+body #root .page {
+  margin-top: 0;
+}
+body #root .page .content {
+  margin-top: 18vh;
+}
+body #root .page .background {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 50rem;
+  background-position: center;
+  background-size: cover;
+  width: calc(100% + (100vw - 100%) / 2);
+}
+@media (max-width: 991px) {
+  body #root .page .background {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */

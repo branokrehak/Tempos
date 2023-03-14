@@ -1,0 +1,45 @@
+@import '../../style/style.css';
+@import '../../abstracts/functions';
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
+body{
+  #root{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .page{
+      align-items: center;
+      position: relative;
+
+      table{
+        td{
+          padding: .35rem 1rem;
+          border-bottom: px(1) solid rgba($color: #000000, $alpha: 1.0);
+          line-height: 1.5;
+          @media (max-width: 425px) {
+            padding: .35rem .4rem;
+            font-size: font(sm);
+          }
+        }
+      }
+      hr{
+        height: px(1);
+        background-color: black;
+      }
+      .pdf-link{
+        color: #000000;
+        img{
+          width: auto;
+          height: 1.125rem;
+          margin-right: .5rem;
+        }
+        &:hover{
+          color: $accent-color;
+          @include transition-eio-015;
+        }
+      }
+    }
+  }
+}
+

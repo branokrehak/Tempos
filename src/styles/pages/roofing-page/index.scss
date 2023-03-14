@@ -1,0 +1,21 @@
+@import '../../style/style.css';
+@import '../../abstracts/functions';
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
+body{
+  #root{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .page{
+      .intro-text{
+        opacity: 1;
+      }
+      .gallery{
+        margin-top: 8rem;
+      }
+    }
+  }
+}
+

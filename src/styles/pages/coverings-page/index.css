@@ -1,0 +1,38 @@
+@import '../../style/style.css';
+body #root {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+body #root .page {
+  align-items: center;
+  position: relative;
+}
+body #root .page table td {
+  padding: 0.35rem 1rem;
+  border-bottom: 0.063rem solid black;
+  line-height: 1.5;
+}
+@media (max-width: 425px) {
+  body #root .page table td {
+    padding: 0.35rem 0.4rem;
+    font-size: 0.875rem;
+  }
+}
+body #root .page hr {
+  height: 0.063rem;
+  background-color: black;
+}
+body #root .page .pdf-link {
+  color: #000000;
+}
+body #root .page .pdf-link img {
+  width: auto;
+  height: 1.125rem;
+  margin-right: 0.5rem;
+}
+body #root .page .pdf-link:hover {
+  color: #4f619b;
+  transition: all 0.15s ease-in-out !important;
+}/*# sourceMappingURL=index.css.map */

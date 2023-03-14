@@ -1,0 +1,13 @@
+@import '../../style/style.css';
+body #root {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+body #root .page .intro-text {
+  opacity: 1;
+}
+body #root .page .gallery {
+  margin-top: 8rem;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,248 @@
+@import '../../style/style.css';
+body #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body #root .home .banner::before {
+  z-index: -2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url("/images/budova.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+body #root .home .banner::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(65, 88, 139, 0.3);
+  width: 50%;
+}
+@media (max-width: 991px) {
+  body #root .home .banner::after {
+    width: 100%;
+    height: calc(70vh - 10%);
+  }
+}
+body #root .home .banner {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(91, 131, 218, 0.2);
+}
+body #root .home .banner .scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 5rem;
+  transform: translateX(-50%) rotate(-90deg);
+  text-decoration: none;
+}
+body #root .home .banner .scroll .arrow {
+  display: flex;
+  height: 1.75rem;
+  color: white;
+  rotate: -45deg;
+  margin-right: 1.125rem;
+}
+body #root .home .banner .scroll .text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.25em;
+}
+body #root .home .banner .scroll:hover .text {
+  transition: all 0.25s ease-out !important;
+  color: #ffee00;
+}
+body #root .home .banner .scroll:hover .arrow {
+  transition: all 0.25s ease-out !important;
+  color: #ffee00;
+}
+body #root .home .banner .row {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  max-width: 95%;
+}
+body #root .home .banner .row .content .title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+body #root .home .banner .row .content .text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  body #root .home .banner .row {
+    height: 70vh;
+  }
+  body #root .home .banner .row .content .title {
+    font-size: 2.25rem;
+    margin-bottom: 0.5em;
+  }
+  body #root .home .banner .row .content .text {
+    font-size: 0.875rem;
+  }
+}
+body #root .home .about {
+  margin-top: 12vh;
+}
+body #root .home .about #scroll {
+  position: absolute;
+  top: 95vh;
+}
+body #root .home .about .container .row .behind {
+  z-index: -1;
+  position: absolute;
+  font-size: 20rem;
+  color: black;
+  top: -18vh;
+  right: 4vh;
+  opacity: 0.05;
+}
+body #root .home .about .container .row .text {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #3a558f;
+}
+body #root .home .about .container .row p {
+  font-size: 1rem;
+  color: black;
+}
+body #root .home .about .container .row button {
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+body #root .home .categories .img-properties {
+  display: inline-block;
+  margin-top: 5vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+body #root .home .categories .img-properties .overlay {
+  overflow: hidden;
+  height: 30rem;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  color: white;
+}
+body #root .home .categories .img-properties .overlay .title {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+body #root .home .categories .img-properties .overlay .title .underline .line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 4.25rem;
+  height: 0.25rem;
+  background: #fff;
+  right: 50%;
+  margin-right: 0.875rem;
+}
+body #root .home .categories .img-properties .overlay .title .underline .line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 4.25rem;
+  height: 0.25rem;
+  background: #fff;
+  left: 50%;
+  margin-left: 0.875rem;
+}
+body #root .home .categories .img-properties .overlay .title .underline .line {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 0.1875rem;
+  margin-top: 0.53125rem;
+}
+body #root .home .categories .img-properties .overlay .title .underline .dot {
+  position: absolute;
+  margin-top: 0.125rem;
+  top: 100%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 50%;
+}
+body #root .home .categories .img-properties .overlay .text {
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  font-size: 0.875rem;
+  transform: translateY(calc(100% + 1.5rem));
+}
+body #root .home .categories .img-properties .overlay .text .more {
+  margin-left: 0.625rem;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  white-space: nowrap;
+}
+body #root .home .categories .img-properties .overlay .text .more .arrow {
+  margin-left: 0.25rem;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 0.25em 0.25em 0;
+  display: inline-block;
+  transform: rotate(-45deg);
+  padding: 0.25em;
+}
+@media (max-width: 1440px) and (min-width: 1200px) {
+  body #root .home .categories .img-properties .overlay .text {
+    display: inline-block;
+  }
+  body #root .home .categories .img-properties .overlay .text .more {
+    text-align: left;
+  }
+}
+body #root .home .categories .img-properties .overlay:hover .text {
+  transition: all 0.25s ease-out !important;
+  align-items: flex-end;
+  width: 100%;
+  transform: translateY(0%);
+}
+body #root .home .categories .img-1 {
+  background-image: url("/images/house-1.jfif");
+}
+body #root .home .categories .img-2 {
+  background-image: url("/images/house-2.jfif");
+}
+body #root .home .categories .img-3 {
+  background-image: url("/images/house-3.jfif");
+}
+body #root .home .categories .img-1:hover .overlay, body #root .home .categories .img-2:hover .overlay, body #root .home .categories .img-3:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.25s ease-out !important;
+}
+body #root footer .contact {
+  margin-top: 8vh;
+}/*# sourceMappingURL=index.css.map */

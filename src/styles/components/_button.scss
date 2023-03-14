@@ -1,0 +1,33 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../utilities/utility';
+.btn-default{
+  font-size: font(4);
+  font-weight: weight(semibold);
+  padding: 1.25rem 4rem;
+  border: px(4) solid $text-color;
+  color: $text-color;
+  background-color: transparent;
+  border-radius: 0;
+  white-space: nowrap;
+  &:hover{
+    @include transition-eio-025;
+    color: $primary-color;
+    background-color: $text-color;
+  }
+}
+.btn-white{
+  font-size: font(4);
+  font-weight: weight(semibold);
+  padding: 1.25rem 4rem;
+  border: px(4) solid $primary-color;
+  color: $primary-color;
+  background-color: transparent;
+  border-radius: 0;
+  white-space: nowrap;
+  &:hover{
+    @include transition-eio-025;
+    background-color: $primary-color;
+    color: $text-color;
+  }
+}

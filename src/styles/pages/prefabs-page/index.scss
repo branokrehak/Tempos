@@ -1,0 +1,53 @@
+@import '../../style/style.css';
+@import '../../abstracts/functions';
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
+body{
+  #root{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .page{
+      align-items: center;
+      position: relative;
+      .bgr-img{
+        background-size: cover;
+        background-position: center;
+        margin-top: 2.5rem;
+        width: 100%;
+        min-height: 30rem;
+        position: relative;
+        margin-bottom: 5rem;
+        .intro-text{
+          position: absolute;
+          bottom: 0;
+          .perex{
+            margin-top: 0;
+            margin-bottom: 0;
+            background-color: $accent-color-85op;
+          }
+        }
+      }
+      p{
+        margin-bottom: 1.5rem;
+      }
+      .pictures{
+        margin-bottom: 1.5rem;
+        .first{
+          width: 40rem;
+          max-width: 100%;
+        }
+        .second{
+          width: 55rem;
+          max-width: 100%;
+        }
+        .third{
+          width: 35rem;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+

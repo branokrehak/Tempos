@@ -1,0 +1,68 @@
+@import '../../style/style.css';
+@import '../../abstracts/functions';
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
+body{
+  #root{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .page{
+      .yt-link{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        iframe{
+          max-width: 100%;
+        }
+      }
+      .categories{
+        a{
+          margin-top: 2rem;
+          background-color: rgb(219, 232, 255);
+          width: 50%;
+          &:hover{
+            background-color: rgb(180, 202, 240);
+            @include transition-eo-025;
+          }
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+          justify-content: space-between;
+          .top{
+            display: block;
+            width: 100%;
+            h5{
+              color: black;
+            }
+            img{
+              width: 10rem;
+              margin-top: 1.5rem;
+              margin-bottom: 1.5rem;
+            }
+          }
+          .bottom{
+            display: block;
+            width: 100%;
+            button{
+              margin-top: 3rem;
+              margin-bottom: 1.5rem;
+              font-weight: weight(bold);
+            }
+          }
+          button{
+            text-align: center;
+            background-color: white;
+            font-size: font(1);
+            padding: .4rem 2.5rem;
+            font-weight: weight(semibold);
+            color: $accent-color;
+            border-color: $accent-color;
+          }
+        }
+      }
+    }
+  }
+}
+

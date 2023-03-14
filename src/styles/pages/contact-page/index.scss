@@ -1,0 +1,32 @@
+@import '../../style/style.css';
+@import '../../abstracts/functions';
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
+body{
+  #root{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .page{
+      margin-top: 0;
+      .content{
+        margin-top: 18vh;
+      }
+      .background{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 50rem;
+        background-position: center;
+        background-size: cover;
+        width: calc(100% + (100vw - 100%) / 2);
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,112 @@
+header {
+  z-index: 999;
+  width: 100%;
+  padding: 1.25rem 0;
+  background-color: #5d71b4;
+  position: fixed;
+}
+header .container .nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .nav-bar #logo {
+  position: relative;
+  display: flex;
+  height: 2.5rem;
+  vertical-align: middle;
+}
+header .container .nav-bar #logo:hover {
+  scale: 1.1;
+  transition: all 0.15s ease-out !important;
+}
+header .container .nav-bar menu .list-media {
+  display: none;
+  position: relative;
+  color: white;
+  height: 2.75rem;
+  width: 2.75rem;
+}
+header .container .nav-bar menu .list-media .items {
+  display: none;
+  position: absolute;
+  left: -9rem;
+  top: 3rem;
+}
+header .container .nav-bar menu .list-media .items ul {
+  background-color: #4b5d99;
+  padding: 0.5rem 1rem;
+  width: 12rem;
+  list-style: none;
+}
+header .container .nav-bar menu .list-media .items ul li {
+  margin: 0.5rem 0;
+}
+header .container .nav-bar menu .list-media .items ul li a {
+  transition: all 0.25s ease-in-out !important;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+header .container .nav-bar menu .list-media .items ul li a:hover {
+  color: yellow;
+}
+header .container .nav-bar menu .list-media:hover {
+  transition: all 0.25s ease-out !important;
+  color: #fffb00;
+}
+header .container .nav-bar menu .list-media:hover .items {
+  display: block;
+}
+header .container .nav-bar menu .list {
+  position: relative;
+  vertical-align: center;
+  text-align: center;
+}
+header .container .nav-bar menu .list ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+header .container .nav-bar menu .list ul li {
+  margin-left: 2rem;
+  display: list-item;
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+}
+header .container .nav-bar menu .list ul li a {
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+header .container .nav-bar menu .list ul li a:hover {
+  color: #fffb00;
+  transition: all 0.15s ease-out !important;
+}
+
+@media (max-width: 1440px) {
+  header {
+    padding: 0.5rem 0;
+  }
+  header #logo {
+    height: 2rem !important;
+  }
+  header menu li {
+    margin-left: 1rem !important;
+  }
+  header menu li a {
+    max-height: 5rem !important;
+    font-size: 0.875rem !important;
+  }
+}
+@media (max-width: 768px) {
+  menu .list {
+    display: none !important;
+  }
+  menu .list-media {
+    display: inline-block !important;
+  }
+}/*# sourceMappingURL=header.css.map */

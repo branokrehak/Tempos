@@ -1,0 +1,121 @@
+@import '../src/abstracts/index';
+footer{
+  .disclaimer{
+    background-color: $footer-color;
+    color: white;
+    width: 100%;
+    font-size: font(sm);
+    .container{
+      padding: 1.5rem 0;
+      .right-text{
+        text-align: right;
+        @media (max-width: 991px) {
+          text-align: left;
+          .media-hidden{
+            display: none;
+          }
+        }
+      }
+      a{
+        color: white;
+        &:hover{
+          text-decoration: none;
+          @include transition-eo-025;
+          color: #ffee00;
+        }
+      }
+    }
+  }
+  .contact::before{
+    content: "";
+    height: 100%;
+    right: 0;
+    position: absolute;
+    background-image: url("/images/mapa.png");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    @media (max-width: 1199px){
+      display: none;
+    }
+  }
+  .contact{
+    position: relative;
+    background-color: $accent-color;
+    .container{
+      padding: 2.5rem 5rem 2.5rem 0;
+      .title{
+        font-weight: 700;
+        color: white;
+        font-size: 2.25rem;
+        margin-bottom: 1em;
+      }
+      .form{
+        .form-input{
+          margin-right: 5rem;
+          position: relative;
+          margin-bottom: 1.25em;
+          background: #fff;
+          text-align: left;
+          font-size: 1em;
+          .inputs{
+            padding: .75rem 1rem;
+            border: none;
+            width: 100%;
+            text-decoration: none;
+          }
+        }
+        .info{
+          color: white;
+          font-size: .875rem;
+          a{
+            color: white;
+            text-decoration: underline;
+            font-weight: 700;
+          }
+          &:hover{
+            a{
+              color: #ffee00;
+              @include transition-eo-025;
+            }
+          }
+        }
+        .btn{
+          margin-top: 3vh;
+          margin-bottom: 1vh;
+          border: px(4) solid #ffffff;
+          color: #ffffff;
+          font-weight: 700;
+          &:hover{
+            @include transition-eo-025;
+            color: #385c91;
+            background-color: #ffffff;
+          }
+        }
+        button{
+          margin-top: 1em;
+        }
+      }
+      .map{
+        display: none;
+        height: 40rem;
+        background-image: url("/images/mapa.png");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        margin-top: 1.5rem;
+      }
+      @media (max-width: 1199px){
+        padding-right: 0;
+        .form{
+          .form-input{
+            margin-right: 0;
+          }
+        }
+        .map{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../style/style.css';
+body #root {
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body #root .page {
+  display: flex;
+  flex: 1 1 auto;
+}
+body #root .page p {
+  margin-bottom: 5em;
+}
+body #root .page button {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 6vh;
+}
+@media (max-width: 375px) {
+  body #root .page button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}/*# sourceMappingURL=index.css.map */

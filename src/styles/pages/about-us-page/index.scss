@@ -1,0 +1,28 @@
+@import '../../style/style.css';
+@import '../../abstracts/functions';
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
+body{
+  #root{
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .page{
+      display: flex;
+      flex: 1 1 auto;
+      p{
+        margin-bottom: 5em;
+      }
+      button{
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 6vh;
+        @media (max-width: 375px) {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../style/style.css';
+body #root {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+body #root .page .yt-link {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+body #root .page .yt-link iframe {
+  max-width: 100%;
+}
+body #root .page .categories a {
+  margin-top: 2rem;
+  background-color: rgb(219, 232, 255);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+}
+body #root .page .categories a:hover {
+  background-color: rgb(180, 202, 240);
+  transition: all 0.25s ease-out !important;
+}
+body #root .page .categories a .top {
+  display: block;
+  width: 100%;
+}
+body #root .page .categories a .top h5 {
+  color: black;
+}
+body #root .page .categories a .top img {
+  width: 10rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+body #root .page .categories a .bottom {
+  display: block;
+  width: 100%;
+}
+body #root .page .categories a .bottom button {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+body #root .page .categories a button {
+  text-align: center;
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.4rem 2.5rem;
+  font-weight: 500;
+  color: #4f619b;
+  border-color: #4f619b;
+}/*# sourceMappingURL=index.css.map */

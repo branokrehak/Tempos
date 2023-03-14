@@ -1,0 +1,27 @@
+@mixin transition-eo-015 {
+  transition: all .15s ease-out !important;
+}
+@mixin transition-eo-025 {
+  transition: all .25s ease-out !important;
+}
+@mixin transition-eo-030 {
+  transition: all .3s ease-out !important;
+}
+@mixin transition-eo-040 {
+  transition: all .4s ease-out !important;
+}
+
+@mixin transition-eio-015 {
+  transition: all .15s ease-in-out !important;
+}
+@mixin transition-eio-025 {
+  transition: all .25s ease-in-out !important;
+}
+@mixin transition-eio-030 {
+  transition: all .3s ease-in-out !important;
+}
+@mixin transition-eio-040 {
+  transition: all .4s ease-in-out !important;
+}
+
+
