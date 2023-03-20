@@ -11,7 +11,7 @@ body #root .home .banner::before {
   top: 0;
   left: 0;
   bottom: 0;
-  background-image: url("/images/budova.jpg");
+  background-image: url("/src/images/budova.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,13 +231,13 @@ body #root .home .categories .img-properties .overlay:hover .text {
   transform: translateY(0%);
 }
 body #root .home .categories .img-1 {
-  background-image: url("/images/house-1.jfif");
+  background-image: url("/src/images/house-1.jfif");
 }
 body #root .home .categories .img-2 {
-  background-image: url("/images/house-2.jfif");
+  background-image: url("/src/images/house-2.jfif");
 }
 body #root .home .categories .img-3 {
-  background-image: url("/images/house-3.jfif");
+  background-image: url("/src/images/house-3.jfif");
 }
 body #root .home .categories .img-1:hover .overlay, body #root .home .categories .img-2:hover .overlay, body #root .home .categories .img-3:hover .overlay {
   background-color: rgba(0, 0, 0, 0.6);

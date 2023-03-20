@@ -1,4 +1,6 @@
-@import '../src/abstracts/index';
+@import '../../abstracts/functions';
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
 footer{
   .disclaimer{
     background-color: $footer-color;
@@ -31,7 +33,7 @@ footer{
     height: 100%;
     right: 0;
     position: absolute;
-    background-image: url("/images/mapa.png");
+    background-image: url("/src/images/mapa.png");
     background-size: cover;
     background-position: center;
     width: 50%;
@@ -99,7 +101,7 @@ footer{
       .map{
         display: none;
         height: 40rem;
-        background-image: url("/images/mapa.png");
+        background-image: url("/src/images/mapa.png");
         background-size: cover;
         background-position: center;
         width: 100%;
