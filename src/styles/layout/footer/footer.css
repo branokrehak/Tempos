@@ -31,7 +31,7 @@ footer .contact::before {
   height: 100%;
   right: 0;
   position: absolute;
-  background-image: url("/src/images/mapa.png");
+  background-image: url("../../../images/mapa.png");
   background-size: cover;
   background-position: center;
   width: 50%;
@@ -99,7 +99,7 @@ footer .contact .container .form button {
 footer .contact .container .map {
   display: none;
   height: 40rem;
-  background-image: url("/src/images/mapa.png");
+  background-image: url("../../../images/mapa.png");
   background-size: cover;
   background-position: center;
   width: 100%;
