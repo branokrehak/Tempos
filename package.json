@@ -1,7 +1,7 @@
 {
   "name": "tempos",
   "version": "1.0.0",
-  "homepage": "http://branokrehak.github.io/tempos/src/pages/index-page/",
+  "homepage": "http://branokrehak.github.io/tempos/",
   "description": "",
   "main": "script.js",
   "scripts": {
