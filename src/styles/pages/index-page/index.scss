@@ -15,7 +15,7 @@ body{
         top: 0;
         left: 0;
         bottom: 0;
-        background-image: url("../../../images/budova.jpg");
+        background-image: url("/tempos/src/images/budova.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -249,13 +249,13 @@ body{
           }
         }
         .img-1{
-          background-image: url("../../../images/house-1.jfif");
+          background-image: url("/tempos/src/images/house-1.jfif");
         }
         .img-2{
-          background-image: url("../../../images/house-2.jfif");
+          background-image: url("/tempos/src/images/house-2.jfif");
         }
         .img-3{
-          background-image: url("../../../images/house-3.jfif");
+          background-image: url("/tempos/src/images/house-3.jfif");
         }
         .img-1, .img-2, .img-3{
           &:hover{
