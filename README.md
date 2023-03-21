@@ -2,4 +2,4 @@
 
 Tempos je jednoducho nadizajnovaná webstránka, ktorá sa zaoberá predajom striech, strešných krytín a prestavbou striech bytových domov.
 
-Localhost server zapnete napísaním **node server.js** do terminálu.
+**Demo link: https://branokrehak.github.io/tempos/**
